@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometric Shapes Calculator</title>
+</head>
+<body>
+  <h1>Geometric Shapes Calculator</h1>
+
+  <div>
+    <h2>Input</h2>
+    <label for="radius">Radius:</label>
+    <input type="number" id="radius" oninput="updateCalculations()">
+    <br>
+    <label for="height">Height:</label>
+    <input type="number" id="height" oninput="updateCalculations()">
+    <br>
+    <label for="slantHeight">Slant Height:</label>
+    <input type="number" id="slantHeight" oninput="updateCalculations()">
+  </div>
+
+  <div class="shape" id="lingkaran">
+    <h2>Lingkaran</h2>
+    <div id="lingkaranResult"></div>
+  </div>
+
+  <div class="shape" id="tabung">
+    <h2>Tabung</h2>
+    <div id="tabungResult"></div>
+  </div>
+
+  <div class="shape" id="kerucut">
+    <h2>Kerucut</h2>
+    <div id="kerucutResult"></div>
+  </div>
+
+  <div class="shape" id="bola">
+    <h2>Bola</h2>
+    <div id="bolaResult"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
